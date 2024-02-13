@@ -10,8 +10,6 @@ async function game() {
     const response = await fetch("https://prog2700.onrender.com/threeinarow/sample");
     const blockGame = await response.json();
 
-    //This statement was added to generate a random tile data set that only have 6 rows
-
 
         //This creates our gameboard using HTML table tags
         let newHTML = `<table id = "gameBoard"></table>`;

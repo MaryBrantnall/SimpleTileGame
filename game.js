@@ -7,11 +7,11 @@ More information in README.
 async function game() {
 
     //This is importing the data we need for our puzzle from an api :)
-    const response = await fetch("https://prog2700.onrender.com/threeinarow/random");
+    const response = await fetch("https://prog2700.onrender.com/threeinarow/sample");
     const blockGame = await response.json();
 
     //This statement was added to generate a random tile data set that only have 6 rows
-    if (blockGame.rows.length == 6 ) {
+
 
         //This creates our gameboard using HTML table tags
         let newHTML = `<table id = "gameBoard"></table>`;
@@ -321,14 +321,8 @@ async function game() {
             
         })
     
-    } else {
 
-        //reloads the window if blockGame rows are not equal to 6.
-        window.location.reload()
-
-    }
-
-} 
+}
 
 game();
 

@@ -19,7 +19,7 @@ async function exampleTest() {
       }
     }
 
-    await driver.executeScript('alert("Test sucessful")')
+    await driver.executeScript('alert("Test sucessful.")')
 
   } finally {
       console.log("data retrieved from API")

@@ -4,9 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev":"concurrently \"vite\" \"node test\"",
+    "dev":"vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "node test"
   },
   "devDependencies": {
     "vite": "^5.1.0"

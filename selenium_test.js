@@ -14,7 +14,11 @@ async function exampleTest() {
       for (let j = 0; j < 6; j++) {
 
         await driver.wait(until.elementLocated(By.id(`${i},${j}`), 10000))
-        await driver.findElement(By.id(`${i},${j}`)).click();
+
+        for(let k=0; k < 4; k++) { //This number could be increased to a large number to do stress testing as well
+          await driver.findElement(By.id(`${i},${j}`)).click();
+        }
+        
           
       }
     }

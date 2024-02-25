@@ -22,8 +22,7 @@ async function exampleTest() {
     await driver.executeScript('alert("Test sucessful.")')
 
   } finally {
-      console.log("data retrieved from API")
-      console.log("clickable tiles all able to be clicked.")
+
   }
   
 }
